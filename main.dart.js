@@ -17575,9 +17575,13 @@ TI:function TI(a,b){this.a=a
 this.b=b},
 TJ:function TJ(){},
 TL:function TL(a){this.a=a},
-TO:function TO(a,b){var _=this
+TO:function TO(a,b,c,d,e,f){var _=this
 _.a=a
-_.f=b
+_.b=b
+_.c=c
+_.d=d
+_.e=e
+_.f=f
 _.r=0
 _.w=null},
 TP:function TP(a){this.a=a},
@@ -52365,14 +52369,13 @@ this.w=$.abh().gBC().q2(new A.TP(this))},
 xs(){var s=this.w
 if(s!=null)s.ae(0)}}
 A.TP.prototype={
-$1(a){var s,r,q,p=a.a/9.80665,o=a.b/9.80665,n=a.c/9.80665
-if(Math.sqrt(p*p+o*o+n*n)>2.7){s=Date.now()
-r=this.a
-q=r.f
-if(q+500>s)return
-if(q+3000<s)r.r=0
-r.f=s;++r.r
-r.a.$0()}},
+$1(a){var s,r,q=a.a/9.80665,p=a.b/9.80665,o=a.c/9.80665,n=this.a
+if(Math.sqrt(q*q+p*p+o*o)>n.b){s=Date.now()
+r=n.f
+if(r+n.c>s)return
+if(r+n.d<s)n.r=0
+n.f=s
+if(++n.r>=n.e)n.a.$0()}},
 $S:349}
 A.TS.prototype={
 jg(a,b,c,d){return this.FZ(0,b,c,d)},
@@ -52444,7 +52447,7 @@ s.cM(new A.Zo(r,B.hi))
 s.cM(new A.Zp())
 s.a1(0,new A.Zq(r))
 r.e.bp(0)
-s=new A.TO(new A.Zr(r),Date.now())
+s=new A.TO(new A.Zr(r),2.7,500,3000,1,Date.now())
 s.Gi()
 $.a4O.b=s},
 n(){var s=this.e
