@@ -52500,7 +52500,7 @@ if(o>=(n?5:4)){o=n?7:5
 if(q.b.vP(o)===1)p.am(new A.Zo(p))}s=p.w===30?5:6
 break
 case 5:s=7
-return A.O($.K2().i0(0,new A.lH("assets/alarm.mp3"),B.DZ,1),$async$$1)
+return A.O($.K2().i0(0,new A.lH("alarm.mp3"),B.DZ,1),$async$$1)
 case 7:case 6:if(p.w===60){o=p.e
 o===$&&A.f()
 o.cW(0)
@@ -52524,7 +52524,7 @@ break
 case 10:s=!p.r?12:13
 break
 case 12:s=14
-return A.O($.K2().i0(0,new A.lH("assets/beep.wav"),B.r8,p.z),$async$$1)
+return A.O($.K2().i0(0,new A.lH("beep.wav"),B.r8,p.z),$async$$1)
 case 14:case 13:p.y=0
 case 11:case 9:case 3:return A.H(null,r)}})
 return A.I($async$$1,r)},
@@ -52552,7 +52552,7 @@ var $async$$0=A.K(function(a,b){if(a===1)return A.G(b,r)
 while(true)switch(s){case 0:p=q.a
 p.am(new A.Zm(p))
 s=2
-return A.O($.K2().i0(0,new A.lH("assets/beep.wav"),B.r8,p.z),$async$$0)
+return A.O($.K2().i0(0,new A.lH("beep.wav"),B.r8,p.z),$async$$0)
 case 2:return A.H(null,r)}})
 return A.I($async$$0,r)},
 $S:18}
